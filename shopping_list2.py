@@ -1,15 +1,9 @@
-# Have a help command
-# Have a show command
-# Clean code up in general
-
-
 
 
 # MAKE sure to run this as python3 - input function can cause issues - Read the comments
 
 # make a list to hold onto our items
 shopping_list = []
-
 
 def show_help():
     # print out instruction on how to use the app
@@ -26,7 +20,10 @@ def show_list():
     for item in shopping_list:
      print(item)
 
-
+def add_to_list(new_item):
+    # add new items to our list
+    shopping_list.append(new_item)
+    print("Added {}. List now has {} items.".format(new_item, len(shopping_list)))
 
 show_help()
 
@@ -44,9 +41,8 @@ while True:
     elif new_item == 'SHOW':
         show_list()
         continue
+    add_to_list(new_item)
 
-    # add new items to our list
-    shopping_list.append(new_item)
 
 show_list()
 
