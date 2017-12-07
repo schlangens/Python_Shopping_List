@@ -10,7 +10,7 @@ Shopping list To-Do
 
 
 ## 2nd Version: Shopping List
-#### shopping_list2.py
+#### /.shopping_list2.py
 
 Python script adds more functionality to the 1st version.
 
