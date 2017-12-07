@@ -5,8 +5,12 @@ shopping_list = []
 print('What should we get at the store?')
 print("Enter 'DONE' to stop adding items.")
 
-# ask for new items
-# add new items to our list
+while True:
+    # ask for new items
+    new_item = input("> ")
+
+    # add new items to our list
+
 # be able to quit the app
 # print out the list
 
