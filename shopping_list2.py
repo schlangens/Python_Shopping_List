@@ -15,10 +15,12 @@ def show_help():
     # print out instruction on how to use the app
     print('What should we get at the store?')
     print("""
-    Enter 'DONE' to stop adding items.
-    Enter 'HELP' for list help.
-    Enter 'SHOW' to show current list.
-    """)
+Enter 'DONE' to stop adding items.
+Enter 'HELP' for list help.
+Enter 'SHOW' to show current list.
+""")
+
+show_help()
 
 while True:
     # ask for new items
@@ -28,6 +30,9 @@ while True:
     # be able to quit the app
     if new_item == 'DONE':
         break
+    elif new_item == 'HELP':
+        show_help()
+
 
     # add new items to our list
     shopping_list.append(new_item)
