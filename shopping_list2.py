@@ -41,9 +41,12 @@ while True:
     elif new_item == 'HELP':
         show_help()
         continue
+    elif new_item == 'SHOW':
+        show_list()
+        continue
 
     # add new items to our list
     shopping_list.append(new_item)
 
-
+show_list()
 
