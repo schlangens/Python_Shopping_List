@@ -1,11 +1,20 @@
+# Have a help command
+# Have a show command
+# Clean code up in general
+
+
+
+
 # MAKE sure to run this as python3 - input function can cause issues - Read the comments
 
 # make a list to hold onto our items
 shopping_list = []
 
-# print out instruction on how to use the app
-print('What should we get at the store?')
-print("Enter 'DONE' to stop adding items.")
+
+def show_help():
+    # print out instruction on how to use the app
+    print('What should we get at the store?')
+    print("Enter 'DONE' to stop adding items.")
 
 while True:
     # ask for new items
