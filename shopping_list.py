@@ -1,3 +1,5 @@
+# MAKE sure to run this as python3 - input function can cause issues - Read the comments
+
 # make a list to hold onto our items
 shopping_list = []
 
