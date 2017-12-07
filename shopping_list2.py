@@ -20,6 +20,14 @@ Enter 'HELP' for list help.
 Enter 'SHOW' to show current list.
 """)
 
+def show_list():
+    # print out the list
+    print("Here's your list:")
+    for item in shopping_list:
+     print(item)
+
+
+
 show_help()
 
 while True:
@@ -32,14 +40,10 @@ while True:
         break
     elif new_item == 'HELP':
         show_help()
-
+        continue
 
     # add new items to our list
     shopping_list.append(new_item)
 
 
-# print out the list
-print("Here's your list:")
 
-for item in shopping_list:
-    print(item)
